@@ -45,7 +45,7 @@ npx hardhat verify <CONTRACT_ADDRESS>  <CONSTRUCTOR_ARGS> --network alfajores
 For the MiniPay.sol contract that could look like this:
 
 ```bash
-npx hardhat verify 0xF9316Ce3E661D704000bCDDA925766Bf7F09fF5B 0x1724707c52de2fa65ad9c586b5d38507f52D3c06  --network alfajores
+npx hardhat verify 0x19B3753c71141EA43630E19ED8082eF69C04E435 0x19B3753c71141EA43630E19ED8082eF69C04E435  --network alfajores
 ```
 
 For Celo Mainnet Verification
