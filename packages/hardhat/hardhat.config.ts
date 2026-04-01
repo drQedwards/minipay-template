@@ -8,11 +8,11 @@ dotEnvConfig();
 const config: HardhatUserConfig = {
   networks: {
     alfajores: {
-      accounts: [process.env.PRIVATE_KEY ?? '0x0'],
+      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
       url: 'https://alfajores-forno.celo-testnet.org',
     },
     celo: {
-      accounts: [process.env.PRIVATE_KEY ?? '0x0'],
+      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
       url: 'https://forno.celo.org',
     },
   },
